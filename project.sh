@@ -133,13 +133,24 @@ sudo tee /var/www/html/index.html > /dev/null <<EOF
 <!DOCTYPE html>
 <html>
 <head>
-    <title>EC2 Instance Info</title>
+    <title>Carlo Ralphael Bravo</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
             padding-top: 20%;
             background-color: #f4f4f4;
+        }
+        .header {
+            position: fixed;
+            bottom: 10px; /* Align to the bottom */
+            left: 10px; /* Align to the left */
+            font-size: 12px;
+            font-weight: bold;
+            background-color: rgba(255, 255, 255, 0.8); /* Optional: Adds a background */
+            padding: 5px 10px; /* Optional: Adds spacing around the text */
+            border-radius: 5px; /* Optional: Makes it look smoother */
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
         }
         .container {
             background: white;
@@ -156,6 +167,7 @@ sudo tee /var/www/html/index.html > /dev/null <<EOF
         <p><strong>Instance ID:</strong> $INSTANCE_ID</p>
         <p><strong>Public IP:</strong> $PUBLIC_IP</p>
     </div>
+    <div class="header">Carlo Ralphael Bravo</div>
 </body>
 </html>
 EOF
