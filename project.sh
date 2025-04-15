@@ -55,6 +55,8 @@ INSTANCE_ID=$(curl -s -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.2
 PUBLIC_IP=$(curl -s -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/public-ipv4)
 REGION=$(curl -s -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/placement/region)
 
+# Ensure no port is appended to the endpoint (remove :3306 if it's accidentally added)
+RDS_ENDPOINT=$(echo $RDS_ENDPOINT | sed 's/:3306//')
 
 # Fetch SSM parameters
 RDS_ENDPOINT=$(aws ssm get-parameter --name "/projectdb/endpoint" --query "Parameter.Value" --region $REGION --output text)
