@@ -1,0 +1,30 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::<account-id>:user/<administrator-username"
+            },
+            "Action": "s3:*",
+            "Resource": [
+                "arn:aws:s3:::crbb-wrvp--212529",
+                "arn:aws:s3:::crbb-wrvp--212529/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Principal": {
+              "Service": "logdelivery.elasticloadbalancing.amazonaws.com"
+            },
+            "Action": "s3:PutObject",
+            "Resource": "arn:aws:s3:::crbb-wrvp--212529/*",
+            "Condition": {
+              "StringEquals": {
+                "s3:x-amz-acl": "bucket-owner-full-control"
+              }
+            }
+        }    
+      
+    ]
+}
