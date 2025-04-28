@@ -38,13 +38,13 @@
 - **Dev:**
 
     <div align="left">
-    <img src="https://github.com/Carlo-05/Terraform-WebApp-RDS-Vault-Project/blob/064d8aa47e5fe889511c5497190fca3464fe8587/Other%20documents/pictures/ReadMe/dev.png?raw=true" alt="Project overview"style="width: 60%; height: auto;">
+    <img src="https://github.com/Carlo-05/Terraform-WebApp-RDS-Vault-Project/blob/064d8aa47e5fe889511c5497190fca3464fe8587/Other%20documents/pictures/ReadMe/dev.png?raw=true" alt="Project overview"style="width: 80%; height: auto;">
     </div>
  
 - **Prod:**
 
     <div align="left">
-    <img src="https://github.com/Carlo-05/Terraform-WebApp-RDS-Vault-Project/blob/064d8aa47e5fe889511c5497190fca3464fe8587/Other%20documents/pictures/ReadMe/prod.png?raw=true" alt="Project overview"style="width: 60%; height: auto;">
+    <img src="https://github.com/Carlo-05/Terraform-WebApp-RDS-Vault-Project/blob/064d8aa47e5fe889511c5497190fca3464fe8587/Other%20documents/pictures/ReadMe/prod.png?raw=true" alt="Project overview"style="width: 80%; height: auto;">
     </div>
  
 
