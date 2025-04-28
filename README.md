@@ -22,7 +22,10 @@
     -	Sensitive credentials are managed by HashiCorp Vault.
     -	Implements a Bastion Host to securely access AWS resources (such as EC2 instances and RDS databases) in isolated subnets.
     -	Implements remote state management for Terraform using Amazon S3 as the backend, with DynamoDB for state locking and consistency, enabling safe, concurrent infrastructure deployments in a collaborative environment.
-### _Note: AMI id is account specific. Change your AMI values in variable.tf. for both the dev and prod._
+### _Note:_
+-	### _AMI id is account specific. Update the AMI values in variable.tf. for both the dev and prod environments to prevent deployment issue. For this project, I used ubuntu and linux 2—ensure that you used the OS mentioned._
+-	### _Review backend.tf and teffaform.tfvars, make sure that you assigned your S3 bucket in the designated variable to avoid deployment issue._
+
 ## **Architecture diagram**
 
 - **Project overview**
