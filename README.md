@@ -125,7 +125,7 @@
 	
 **IAM-ROLE**
 -	IAM role that is attached to WebApp instance. It has a policy that includes AmazonEC2ReadOnlyAccess, AmazonRDSFullAccess, AmazonSSMManagedInstanceCore, and CloudWatchFullAccess.
--	This is the policy needed for project.sh in order for it to run smoothly and for the ASG target scaling policy to perform its function.
+-	This policy is required for project.sh to function smoothly and ensure the ASG target scaling policy operates effectively
 	
 **KEYPAIR**
 -	Create a key pair using the keys generated on your local machine. This process will import your public key into AWS, enabling authentication with the private key stored locally and the corresponding public key in AWS.
